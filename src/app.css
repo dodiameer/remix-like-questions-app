@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .line {
+    @apply flex flex-row items-center;
+  }
+
+  .title {
+    @apply text-2xl font-bold mb-2;
+  }
+
+  .subtitle {
+    @apply text-lg font-semibold mb-2;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-4 py-2 rounded font-semibold text-center no-underline text-sm;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 hover:bg-secondary-600 text-white;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 hover:bg-red-600 text-white;
+  }
+
+  .input {
+    @apply border border-primary-500 rounded p-2 block;
+  }
+
+  .label {
+    @apply text-sm font-semibold mb-2 block;
+  }
+
+  .alert {
+    @apply p-2 my-2 rounded border font-semibold;
+  }
+
+  .alert-success {
+    @apply bg-green-500/40 border-green-700 text-green-900;
+  }
+
+  .alert-danger {
+    @apply bg-red-500/40 border-red-700 text-red-900;
+  }
+}
